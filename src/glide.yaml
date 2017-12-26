@@ -1,0 +1,12 @@
+package: github.com/delphinus/macedonia/src
+import:
+- package: github.com/gin-gonic/gin
+  version: ^1.2.0
+- package: google.golang.org/appengine
+  version: ^1.0.0
+  subpackages:
+  - log
+- package: gopkg.in/src-d/go-git.v4
+  version: ^4.0.0-rc9
+  subpackages:
+  - storage/memory
