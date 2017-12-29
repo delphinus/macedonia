@@ -1,0 +1,27 @@
+runtime: go
+api_version: go1.8
+service: macedonia
+instance_class: F1
+automatic_scaling:
+  min_idle_instances: 0
+  max_idle_instances: 2
+  min_pending_latency: automatic
+  max_pending_latency: automatic
+  max_concurrent_requests: 80
+
+env_variables:
+  GIN_MODE: release
+
+includes:
+  - secrets.yaml
+
+skip_files:
+  - ^[^/]*\.yaml$
+  - ^[^/]*\.encrypted$
+
+handlers:
+  - url: /.*
+    script: _go_app
+    login: admin
+    secure: always
+    redirect_http_response_code: 301

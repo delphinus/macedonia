@@ -10,3 +10,4 @@ import:
   version: ^4.0.0-rc9
   subpackages:
   - storage/memory
+- package: github.com/jinzhu/configor

@@ -1,5 +1,5 @@
-hash: 5f42e50a1edce53a4c97d0fef9f6f0f20a6bf4f78a31f3d356694a4b53cae3ea
-updated: 2017-12-26T23:30:51.923732+09:00
+hash: 01872a15db7d7d895bba78f1f0ae281bc7501e898b3affc5680045da19c5d2ca
+updated: 2017-12-27T22:48:41.067621+09:00
 imports:
 - name: github.com/gin-contrib/sse
   version: 22d885f9ecc78bf4ee5d72b937e4bbcdc58e8cae
@@ -16,6 +16,8 @@ imports:
   version: d14ea06fba99483203c19d92cfcd13ebe73135f4
   subpackages:
   - io
+- name: github.com/jinzhu/configor
+  version: 6ecfe629230f24c2e92c7894c6ab21b83b757a39
 - name: github.com/mattn/go-isatty
   version: 6ca4dbf54d38eea1a992b3c722a76a5d1c4cb25c
 - name: github.com/mitchellh/go-homedir
@@ -54,7 +56,7 @@ imports:
   subpackages:
   - unix
 - name: golang.org/x/text
-  version: eb22672bea55af56d225d4e35405f4d2e9f062a0
+  version: e19ae1496984b1c655b8044a65c0300a3c878dd3
   subpackages:
   - transform
   - unicode/norm
